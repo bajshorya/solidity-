@@ -1,0 +1,238 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "contractID",
+						"type": "uint256"
+					}
+				],
+				"name": "FarmingContractCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "contractID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_cropType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deliveryDeadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_offeredPricePerKg",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_buyerPhoneNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "createFarmingContract",
+				"outputs": [
+					{
+						"internalType": "contract FarmingContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "deployedContractsList",
+				"outputs": [
+					{
+						"internalType": "contract FarmingContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_contractID",
+						"type": "uint256"
+					}
+				],
+				"name": "fGetContractDetails",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "_farmerWallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_farmerPhoneNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_buyerWallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_buyerPhoneNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_cropType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deliveryDeadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_pricePerKg",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalPayment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_contractId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum FarmingContract.ContractStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_contractID",
+						"type": "uint256"
+					}
+				],
+				"name": "getDeployedContracts",
+				"outputs": [
+					{
+						"internalType": "contract FarmingContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FarmingContractFactory.sol": "FarmingContractFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FarmingContract.sol": {
+			"keccak256": "0x569d546a91c8a6e4210f3229694ffe3b7a18e74c2154d9293e59b2d9a94bf3d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72680e015691ba2894bb2446ad5fbe5bbc52fd577dc0ae16367b35e090634afd",
+				"dweb:/ipfs/Qmae2TkKvnvVg2gda7XoYjbn2gPSV8EPC1TWdWKnVoWzWg"
+			]
+		},
+		"contracts/FarmingContractFactory.sol": {
+			"keccak256": "0xa35e8d40b473d1480c1828a89d3577b476f2f7a9ef4dff834a8c2dea7e01245b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://378b024fcc64dca3698c645710e0aea919e04cfec4a4d215695e6aa90f020707",
+				"dweb:/ipfs/QmZgCJtV4AASuqbTuVbt8NeRYhZNVnKLJNqCTWSfpUiphB"
+			]
+		}
+	},
+	"version": 1
+}
