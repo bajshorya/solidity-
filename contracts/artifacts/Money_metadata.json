@@ -7,19 +7,27 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "proxyAdd",
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "ad",
+						"type": "address"
+					}
+				],
+				"name": "drain",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "proxyGet",
+				"name": "totalMoney",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -44,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Contract2.sol": "Contract2"
+			"contracts/Money.sol": "Money"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -58,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Contract2.sol": {
-			"keccak256": "0x81a36534114edc7eff2516f3b768eecd97e2dcabffc2a882c4cc630d79b04252",
+		"contracts/Money.sol": {
+			"keccak256": "0x4471f24fdcdbe9455be427bdfd8b27ee829c5b6aa3486e635f8ad3171a9d3fb8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c9c715595dd18a497e7f924f25dedb448133dd1fd19ce696baddcc21aab585be",
-				"dweb:/ipfs/QmX5QPAzfg9T2Hf28uKdimb1UF4yNuzFkwdp839D84jH2i"
+				"bzz-raw://c44e14df5c20ea1d0acf40b8d7f51f81f9b9d1031cf6461fc9e7da16291af0f0",
+				"dweb:/ipfs/QmQjd4VPmaVZkWqGtKVBE7jcXrNALuT2eTFm4Mith2meyA"
 			]
 		}
 	},

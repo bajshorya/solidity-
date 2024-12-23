@@ -6,20 +6,33 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_recepient",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "proxyAdd",
+				"name": "claim",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "proxyGet",
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastVisited",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -28,6 +41,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ping",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -44,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Contract2.sol": "Contract2"
+			"contracts/Will.sol": "Will"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -58,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Contract2.sol": {
-			"keccak256": "0x81a36534114edc7eff2516f3b768eecd97e2dcabffc2a882c4cc630d79b04252",
+		"contracts/Will.sol": {
+			"keccak256": "0xbd8af6523182922e131573f37428b75db60350f2c321e9da346cb99fa0d826f2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c9c715595dd18a497e7f924f25dedb448133dd1fd19ce696baddcc21aab585be",
-				"dweb:/ipfs/QmX5QPAzfg9T2Hf28uKdimb1UF4yNuzFkwdp839D84jH2i"
+				"bzz-raw://e184298cc428a2643b1d99d80e4ab66c7691e0c2cbd3169c7166623b2614dc59",
+				"dweb:/ipfs/QmfMKtvVFuQ3LHHvKDzgVoyFeroQs2DVVZiGJupfKW23m2"
 			]
 		}
 	},

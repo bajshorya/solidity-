@@ -10,10 +10,10 @@ contract Contract2{
 
     }
     function proxyAdd() public {
-        IStorage(0xD4Fc541236927E2EAf8F27606bD7309C1Fc2cbee).add();
+        IStorage(0x4a9C121080f6D9250Fc0143f41B595fD172E31bf).add();
     }
     function proxyGet() public  view returns(uint){
-        uint value = IStorage(0xD4Fc541236927E2EAf8F27606bD7309C1Fc2cbee).getNum();
+        uint value = IStorage(0x4a9C121080f6D9250Fc0143f41B595fD172E31bf).getNum();
         return value;
     }
 }
