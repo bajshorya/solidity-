@@ -4,6 +4,7 @@ contract BajCoin{
     address public owner;
     uint public totalSupply;
     mapping (address => uint) public  balances;
+    string public name= "ShoryaCoin";
     constructor(){
         owner=msg.sender;
     }
